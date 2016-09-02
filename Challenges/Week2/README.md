@@ -1,4 +1,4 @@
-Try and do all of the following.  Don't worry if you can't complete everything or have difficulty getting started.  We'll walk through this in class next week!
+    Try and do all of the following.  Don't worry if you can't complete everything or have difficulty getting started.  We'll walk through this in class next week!
 
 -Prompt the user for input and store that into a variable
 

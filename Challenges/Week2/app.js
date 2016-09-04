@@ -1,6 +1,6 @@
 //create function
   //control and return statements
-  
+
 function HelloWorld(){
   var hello
   do{

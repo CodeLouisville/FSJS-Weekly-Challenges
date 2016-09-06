@@ -4,19 +4,20 @@ function hello() {
 	//Prompt user for input and store variable
     var greeting = prompt("Say Hello", "");
 	//control and return statements
-    if (greeting == "Hello") {
+    if (greeting.toLowerCase() === "hello") {
         document.getElementById("msg").innerHTML =
-        greeting + " World!";
+        greeting.charAt(0).toUpperCase()+greeting.slice(1) + " World!";
 		//Alert user results
-        alert(greeting + " World!");
+        alert(greeting.charAt(0).toUpperCase()+greeting.slice(1) + " World!");
 
     }else {
         document.getElementById("msg").innerHTML =
-        "Incorrect input!";
+        "Sorry, \"" + greeting + "\" isn't correct!";
 		//Alert user results
-        alert("Incorrect input!");
+        alert("Sorry, \"" + greeting + "\" isn't correct!");
        }
 }
+hello();
 
 
 

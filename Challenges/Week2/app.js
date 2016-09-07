@@ -18,17 +18,12 @@
 -Don't forget to call your script file from this HTML file!  I've created the script tags for you, but you have to add something to it!
 */
 
-
-
-
-  function input() {
-	var sayHello = prompt();
+function hello() {
+ var sayHello = prompt();
 	if (sayHello === 'Hello') {
-    alert('Hello World');
+	alert('Hello World');
 	} else {
-	alert("Incorrect input!");	
-	}
-  }
-
-
-
+	  alert("Incorrect input!");
+	  }
+}
+hello();

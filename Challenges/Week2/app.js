@@ -8,14 +8,13 @@ function processInput(message)
 
   console.log(message);
 
-  if(message === "Hello!")
+  if(message == 'Hello!')
   {
-    return("Hello world!");
+    return('Hello world!');
 
-  }
-  else {
+  } else {
     return("You didn't say hello :(");
-  }
+    }
 }
 
 var userInput;
@@ -24,7 +23,7 @@ userInput = prompt();
 
 var response = processInput(userInput);
 
-
+console.log(response);
 
 
 //Call function

@@ -1,5 +1,5 @@
 function hello(input){//create function
-  if(input=="Hello") 
+  if(input==="Hello")
     return "Hello World!";
   else return "Incorrect input!";
 }//control and return statements

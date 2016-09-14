@@ -22,4 +22,3 @@ $('.cheat-button').click(
 		$('.answer').toggle()
 	}
 );
-

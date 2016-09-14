@@ -3,6 +3,14 @@ body {
     font-family: arial;
 }
 
+.footer {
+    text-align: center;
+    color: #ddd;
+    font-size: 0.8em;
+    width: 100%;
+    margin-top: 10px;
+}
+
 .content_wrapper {
     width: 90%;
     padding: 5%;
@@ -16,8 +24,18 @@ body {
     margin: auto;
 }
 
+img {
+    max-width: 100%;
+}
+
 h1 {
     font-size: 3em;
+    text-align: center;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.5em;
     text-align: center;
     font-weight: bold;
 }
@@ -37,6 +55,9 @@ h1 {
         float: left;
         margin-bottom: 1%;
         color: #666;
+    }
+    .example-block .twocolumn {
+        display: none;
     }
 
 ul {
@@ -60,9 +81,12 @@ ul {
         box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
         transition: box-shadow 300ms, background 300ms;
     }
-    ul li a:hover {
+    ul li a.hover {
         box-shadow: 1px 2px 8px rgba(0,0,0,0.5);
         background: #8e24aa;
+    }
+    ul li.active a, ul li.active a.hover {
+        background: #ab47bc;
     }
 
 p {

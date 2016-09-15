@@ -6,10 +6,11 @@ $('.answer').hide();
 /*  3.)  Write code to show the answer when hovering over a flash card, and hide it when the mouse leaves.
     Find the approriate event on the jQuery API page to trigger an action on hover https://api.jquery.com/category/events/
     Hint: You can use "this" inside your jQuery function to reference a selected DOM node.  */
-    function handlerIn(){
-      $(this).children('.answer').show();
-    }
-$('.flash-card').hover(handlerIn,
+
+$('.flash-card').hover(
+  function(){
+    $(this).children('.answer').show();
+  },
   function(){
     $(this).children('.answer').hide();
   }

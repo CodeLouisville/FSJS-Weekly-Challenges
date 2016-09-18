@@ -1,11 +1,6 @@
 # FSJS-Weekly-Challenges
 Weekly challenges for FullStack JavaScript students
 
-Week 2
+9/13/2016: This is a change to the README file to see if you correctly pulled the changes.  If you did a pull request and see both this message AND your own local changes, you did it correctly!
+9/15/2016: Another change for testing purposes
 
-solution:
-
-+ input from user
-+ store in variable and function
-+ function call
-+ alert, write response with if/else loop

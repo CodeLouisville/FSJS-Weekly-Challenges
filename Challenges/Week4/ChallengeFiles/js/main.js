@@ -6,24 +6,19 @@ function openBlock (id) {
         blocks[y].style.display = "none";
     }
     block.style.display = "block";
-    
     // TODO: remove the "active" class from all of the li elements inside the menu
     // TODO: add the "active" class to the li element that contains the link that was clicked
-
 };
 
-
-$("#menu li a").click(
-    console.log("yo dawg!");
-    openBlock(id);
-)
+//part 1
+$("#menu li a").click(function(){
+    openBlock($(this).attr("id").replace("menu_item_", ""));
+});
 
 // TODO: add the "hover" class to the menu items when you hover over them
-
 $("#menu li a").hover(
 function() {
     $(this).addClass("hover");
-    console.log ("im being added");
   }, function() {
     $(this).removeClass("hover");
   }

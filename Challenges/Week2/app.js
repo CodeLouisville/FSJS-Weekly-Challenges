@@ -22,6 +22,7 @@ function hello() {
  var sayHello = prompt();
 	if (sayHello === 'Hello') {
 	alert('Hello World');
+    document.write("you did it!")
 	} else {
 	  alert("Incorrect input!");
 	  }

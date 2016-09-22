@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="lib/framework.css" type="text/css" />
+    <!-- TODO: load the tooltip CSS file -->
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+	<title>Super Awesome Website Place</title>
+</head>
+<body>
+
+    <div class="content_wrapper">
+
+        <div class="content">
+            <h1>The Website All About This Website!</h1>
+            <h2>The Most Meta Website on this Website.</h2>
+
+            <div class="example-block" id="main">
+                <div class="onecolumn block">
+                    <ul id="menu">
+                        <!-- TODO: make these links work -->
+                        <li class="active"><a id="menu_item_home" href="#" title="Click here to go home">Home</a></li>
+                        <li><a id="menu_item_about" href="#" title="Find out all about me">About</a></li>
+                        <li><a id="menu_item_plans" href="#" title="This seems like a secure way to store these">Top Secret Death Star Plans</a></li>
+                        <li><a id="menu_item_cat" href="#" title="A website just isn't a website without cat pictures!">Picture of My Cat</a></li>
+                        <li><a id="menu_item_blog" href="#" title="Welcome to 2005">Blog</a></li>
+                        <li><a id="menu_item_contact" href="#" title="Protip: only people who are mad at you use contact links">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div id="main_content">
+                    <div class="twocolumn block" style="display: block" id="home">
+                        <p>First off, congratulations on getting this far. That's pretty neat just in itself. Go ahead, pat yourself on the back.</p>
+                        
+                        <p><img src="http://i.imgur.com/t0kLc0c.gif" /></p>
+
+                        <p>Okay, enough of that. We have work to do.</p>
+
+                        <p>You'll notice that there are links all up on the left side there. That's the navigation for this super cool website. The links don't work, though! HALP</p>
+
+                        <p><strong>CHALLENGE ONE, Page navigation using the DOM:</strong> <br /> I have a function in my javascript that will show a content block if you pass it the ID of that block. For example, <strong>showBlock("home")</strong> will show this content block. How do I get the links to actually call that function when the user clicks on them?</p>
+                        
+                        <p><strong>CHALLENGE TWO, Highlighting the button:</strong> <br /> I created a class, <strong>.active</strong> which will make the current button highlighted when that item is open (the first item is set up by default). When you click on other buttons, it needs to remove the .active class from the old button and add it to the new one. I can probably adapt the code I have for changing the visible content . . . somehow . . . </p>
+
+                        <p><strong>CHALLENGE THREE, Button hovers:</strong> <br />I want the menu buttons to change color when you put the mouse over them. I created a class, <strong>.hover</strong> which does that, but I don't know how to actually make the links have that class. I think jQuery could probably help with this, couldn't it?</p>
+
+                        <p><strong>CHALLENGE FOUR, Install a jQuery Plugin:</strong> <br /> I found this really great jQuery plugin for showing tooltips on the page. I think a genius made it, or at least somebody really super handsome. I downloaded all the files that you'll need to use it, and put them in the <strong>lib/tooltip</strong> folder, but I don't know how to load them into jQuery. Check the <a href="https://github.com/shauvonm/tooltip" target="_blank">documentation for the plugin</a> and see what files need to be included.</p>
+
+                        <p><strong>CHALLENGE FIVE, Use a jQuery Plugin:</strong> <br /> All of those navigation links up on the left there have "title" attributes. That kind of looks dumb, so I want to use that amazing tooltip plugin that we installed. How do I make it so putting the mouse over those links will show a fancy tooltip instead of just the default?</p>
+
+                        <p><strong>CHALLENGE SIX, jQuery Plugin options:</strong> <br /> I kind of don't like when the tooltips show up immediately. Can you make it so they show up after one second?</p>
+
+                        <p><strong>BONUS CHALLENGE, Vanilla vs. jQuery:</strong> <br /> I used vanilla Javascript to handle the navigation of my awesome website. I know it would probably be easier to do that with jQuery, but I just can't figure out how.</p>
+                    </div>
+
+                    <div class="twocolumn block" id="about">
+                        <p>All about me! I am the greatest. I created this website. This website is all about this website, which makes it the best this-website-based website on this website. If you know of a better website about this website, please send it to me so I can find the person who made that website and beat them up. Just kidding, I would never beat somebody up. I have weak arms and a generally cowardly disposition. I would probably just yell something at them and then run away. Seriously, though, there's nothing they could do to stop me. I'm not saying I'm a tactical genius but it's essentially a fool-proof plan that could not possibly ever be foiled.</p>
+
+                        <p></p>
+                    </div>
+
+                    <div class="twocolumn block" id="plans">
+                        <p><img src="img/234579-19.jpg" /></p>
+                    </div>
+
+                    <div class="twocolumn block" id="cat">
+                        <p><img src="img/cat.jpg" /></p>
+                    </div>
+
+                    <div class="twocolumn block" id="blog">
+                        <p>Post number one: <br />I am mad about a thing. Grr!</p>
+
+                        <p>Post number two: <br /> I disagree with someone's personal opinion. Grr!</p>
+
+                        <p>Post number three: <br /> I am going to go out of my way to treat a really popular opinion as if it were something only I have ever thought of.</p>
+
+                        <p>Post number four: <br /> Something about <em>Stranger Things</em>.</p>
+
+                        <p>Post number five: <br /> Uh oh, I'm mad about another thing. Grr!</p>
+                    </div>
+
+                    <div class="twocolumn block" id="contact">
+                        <p>Were this a real website, I would have some sort of super cool contact form here. Instead, I'll just throw in this picture I drew of the Sun really giving it to that upstart Pluto.</p>
+
+                        <p><img src="img/sun.jpg" /></p>
+                    </div>
+                </div>
+
+                <div class="clear"></div>
+            </div>
+
+        </div>
+        
+        <div class="clear"></div>
+    </div>
+    
+    <div class="footer">Copyright &copy; 1996 Super Cool Website Solutions, LLC. All Rights Deserved</div>
+   
+	<script src="lib/jquery.min.js" type="text/javascript"></script>
+    <!-- TODO: load the tooltip plugin javascript -->
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

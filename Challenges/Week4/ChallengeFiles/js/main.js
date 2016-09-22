@@ -18,8 +18,8 @@ function openBlock (id) {
         listClicked.className="active";
 }
 
-//Add a onclick event to the link
-var link=document.getElementsByTagName("a");
+//Add a onclick event to all the link
+var link=document.querySelectorAll("#menu li a");
 for(i=0;i<link.length;i++){
   link[i].onclick=function(){
     var blockId=this.id.substring(10);//The id which was clicked is menu_item_+blockId

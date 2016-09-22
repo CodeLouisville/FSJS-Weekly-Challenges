@@ -7,17 +7,16 @@ function openBlock (id) {
     }
     block.style.display = "block";
     $("#menu li").removeClass("active");
-    // TODO: remove the "active" class from all of the li elements inside the menu
-    // TODO: add the "active" class to the li element that contains the link that was clicked
 };
 
-//part 1
+
+//change block content based on menu item clicked and highlight the current view
 $("#menu li a").click(function(){
     openBlock($(this).attr("id").replace("menu_item_", ""));
     $(this).parent().addClass("active");
 });
 
-// TODO: add the "hover" class to the menu items when you hover over them
+//highlight the item your mouse is over in the menu
 $("#menu li a").hover(
 function() {
     $(this).addClass("hover");
@@ -26,5 +25,10 @@ function() {
   }
 );
 
-// TODO: set up the tooltip plugin on all of the links in the menu
+//tooltip menu plugin
+$('#menu a').tooltip({
+    delay  : 1000,
+    direction : "above"
+}
 
+);

@@ -1,14 +1,25 @@
-//  1.)  Make sure you have a reference to jQuery from a CDN in the index.html file.  
+function addPokemon(name) {
+    $(`
+        <li class="poke-card">
+            <h3 class="name">${name}</h3>
+        </li>
+    `).appendTo('#pokemon');
+};
 
-//  2.)  Use a jQuery to hide all of the answers to all the questions.
-$('.answer')
 
-/*  3.)  Write code to show the answer when hovering over a flash card, and hide it when the mouse leaves. 
-    Find the approriate event on the jQuery API page to trigger an action on hover https://api.jquery.com/category/events/
-    Hint: You can use "this" inside your jQuery function to reference a selected DOM node.  */
-$('.flash-card')
+// 1.)  Use the PokéAPI from http://pokeapi.co along with jQuery's getJSON function to retrieve the first 20 Pokémon.
+// 1.1)  Use the addPokemon function to show each of the Pokémon names that were retrieved.  
+//Hint: Learn how to access resources via the documentation http://pokeapi.co/docsv2/#resource-lists
 
-/*  4.) Use jQuery to find the button element on the page and have it toggle all of the answers on and off when clicked.
-    Hint: jQuery has a toggle function that can toggle the visibility of a selected DOM node.
-    Bonus:  Change the text of the button using jQuery when you toggle the answers on/off. */  
-$()
+
+// 2.)  Use jQuery to create a click handler for the next and previous buttons.
+// 2.1) Use the "next" and "previous" properties of the pokemon resource object to get the next or previous list of Pokémon.
+// 2.2) When a user clicks next or previous, remove all existing Pokémon from the ul element and add the new list of Pokémon.  
+// 2.3) Use jQuery to disable the next/previous buttons if there are no more Pokémon to retrieve in that direction.  
+
+/*  Super Awesome Bonus!
+    When you click on a Pokémon name, hide all the names and show a larger card that contains details about that Pokémon such as their sprite (picture), name,
+    type or anything else you would like to include.  Add a way to go back to the list when your're done looking at the detail.
+
+    Be creative, you can style/arrange the detail information however you like! 
+*/

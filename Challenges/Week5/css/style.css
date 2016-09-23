@@ -6,6 +6,7 @@ html {
 body {
     background: url("../images/grass.png") bottom center no-repeat, rgb(173,216,230);
     background-size: contain;
+    background-attachment: fixed;
     color: white;
     font-family: sans-serif;
 }
@@ -21,6 +22,12 @@ body {
 
 .header {
   text-align: left;
+}
+
+#main-content {
+  text-align: center; 
+  width: 80%;  
+  margin-bottom: 1em;
 }
 
 h1 {
@@ -40,27 +47,29 @@ h1 {
   vertical-align: top;
 }
 
-.flash-card {
+.poke-card {
     background: white;
     color: black;
-    height: 100px;
     border-radius: 5px;
     margin-top: 1em;
     transition: all .2s ease-in-out;
     overflow: hidden;
 }
 
-.question {
-    height: 3em;
-    margin-bottom: 1em;
-    display: block;
+.poke-card img {
+  float: left; 
 }
 
-.answer {
-    display: block;
+.poke-card .poke-info {
+  float: left;
 }
 
-.flash-card:hover {
+.poke-card .name {
+  text-align: center;
+}
+
+
+.poke-card:hover {
     transform: scale(1.05);
     box-shadow: 2px 2px 10px black;
 }
@@ -68,6 +77,7 @@ h1 {
 ul {
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 ul li {
@@ -79,24 +89,46 @@ ul li {
     cursor: pointer;
 }
 
-.cheat-button {
+.btn {
     color: white;
-    background-color: purple;
+    background-color: #C62828;
     border: none;
     padding: 1em;
     border-radius: 5px;
-    display: block;
+    display: inline-block;
     margin: 0 auto;
     margin-top: 1em;
     font-size: 1.2em;
     cursor: pointer;
     transition: all .2s ease-in-out;
+    min-width: 150px;   
 }
 
-.cheat-button:hover {
+.btn:hover {
     transform: scale(1.05);
 }
 
+
+@media( max-width: 700px ) {
+  .poke-card {
+    width: 40%;
+  }
+
+  #main-content {
+    width: 100%;
+    margin-top: 3em;
+  }
+
+  .header {
+    margin-top: 3em;
+  }
+}
+
+@media( max-width: 450px ) {
+  .poke-card {
+    width: 90%;
+  }
+}
 
 /* Hang */
 @-webkit-keyframes hvr-hang {
@@ -106,8 +138,8 @@ ul li {
   }
 
   50% {
-    -webkit-transform: translateY(4px);
-    transform: translateY(4px);
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
   }
 
   100% {
@@ -123,8 +155,8 @@ ul li {
   }
 
   50% {
-    -webkit-transform: translateY(4px);
-    transform: translateY(4px);
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
   }
 
   100% {

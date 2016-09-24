@@ -7,30 +7,22 @@ function addPokemon(name) {
 };
 
 var pokedex = "http://pokeapi.co/api/v2/pokemon/";
-var pokemon = [];
-
+ var pokeName = [];
 // 1.)  Use the PokéAPI from http://pokeapi.co along with jQuery's getJSON function to retrieve the first 20 Pokémon.
-$.getJSON(pokedex, function(results){
-  console.log(results);
-}
-)
-.done(function addPokemon(name) {
-    $(`
-        <li class="poke-card">
-            <h3 class="name">${name}</h3>
-        </li>
-    `).appendTo('#pokemon');
-})
-  .fail(function( jqxhr, textStatus, error ) {
-    var err = textStatus + ", " + error;
-    console.log( "Request Failed: " + err );
-});
+$.getJSON(pokedex, function(data){
+  console.log(data);
+  });
+// 1.1)  Use the addPokemon function to show each of the Pokémon names that were retrieved.  
+//Hint: Learn how to access resources via the documentation http://pokeapi.co/docsv2/#resource-lists
+
   
+
 // 2.)  Use jQuery to create a click handler for the next and previous buttons.
 // 2.1) Use the "next" and "previous" properties of the pokemon resource object to get the next or previous list of Pokémon.
 $("#previous").click(function(){
    console.log("prev clicked");
 });
+
 $("#next").click(function(){
    console.log("next clicked");
 });

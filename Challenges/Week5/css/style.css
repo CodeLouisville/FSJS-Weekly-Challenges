@@ -1,0 +1,205 @@
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("../images/grass.png") bottom center no-repeat, rgb(173,216,230);
+    background-size: contain;
+    background-attachment: fixed;
+    color: white;
+    font-family: sans-serif;
+}
+
+#pikachu {
+    position: fixed;
+    top: 1em;
+    right: 1em;
+    width: 25%;
+    z-index: -1;
+}
+
+
+.header {
+  text-align: left;
+}
+
+#main-content {
+  text-align: center; 
+  width: 80%;  
+  margin-bottom: 1em;
+}
+
+h1 {
+    text-shadow: 2px 2px 2px #000;
+    display: inline-block;
+    font-size: 3em;
+    line-height: 1.3em;
+    margin:0;
+    margin-left: 10px;
+    vertical-align: top;
+}
+
+
+.header-logo {
+  display: inline-block;
+  height: 4em;
+  vertical-align: top;
+}
+
+.poke-card {
+    background: white;
+    color: black;
+    border-radius: 5px;
+    margin-top: 1em;
+    transition: all .2s ease-in-out;
+    overflow: hidden;
+}
+
+.poke-card img {
+  float: left; 
+}
+
+.poke-card .poke-info {
+  float: left;
+}
+
+.poke-card .name {
+  text-align: center;
+}
+
+
+.poke-card:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 2px 10px black;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+ul li {
+    list-style: none;
+    width: 20%;
+    margin: 0 1%;
+    padding: 1em;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.btn {
+    color: white;
+    background-color: #C62828;
+    border: none;
+    padding: 1em;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 1em;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    min-width: 150px;   
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+
+@media( max-width: 700px ) {
+  .poke-card {
+    width: 40%;
+  }
+
+  #main-content {
+    width: 100%;
+    margin-top: 3em;
+  }
+
+  .header {
+    margin-top: 3em;
+  }
+}
+
+@media( max-width: 450px ) {
+  .poke-card {
+    width: 90%;
+  }
+}
+
+/* Hang */
+@-webkit-keyframes hvr-hang {
+  0% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+
+  50% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+
+@keyframes hvr-hang {
+  0% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+
+  50% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+
+@-webkit-keyframes hvr-hang-sink {
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+
+@keyframes hvr-hang-sink {
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+
+.hvr-hang {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+    -webkit-animation-name: hvr-hang-sink, hvr-hang;
+  animation-name: hvr-hang-sink, hvr-hang;
+  -webkit-animation-duration: 1s, 2s;
+  animation-duration: 1s, 2s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+}

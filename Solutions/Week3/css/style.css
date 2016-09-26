@@ -1,0 +1,80 @@
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cb60b3+0,ad1283+50,de47ac+100;Pink+3D */
+    background: #cb60b3; /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  #cb60b3 0%, #ad1283 50%, #de47ac 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  #cb60b3 0%,#ad1283 50%,#de47ac 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  #cb60b3 0%,#ad1283 50%,#de47ac 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb60b3', endColorstr='#de47ac',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background-attachment: fixed;
+    color: white;
+    font-family: sans-serif;
+}
+
+
+h1 {
+    text-shadow: 2px 2px 2px #000;
+    display: block;
+    text-align: center;
+}
+
+.flash-card {
+    background: white;
+    color: black;
+    height: 100px;
+    border-radius: 5px;
+    margin-top: 1em;
+    transition: all .2s ease-in-out;
+    overflow: hidden;
+}
+
+.question {
+    height: 3em;
+    margin-bottom: 1em;
+    display: block;
+}
+
+.answer {
+    display: block;
+}
+
+.flash-card:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 2px 10px black;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+    width: 20%;
+    margin: 0 1%;
+    padding: 1em;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.cheat-button {
+    color: white;
+    background-color: purple;
+    border: none;
+    padding: 1em;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1em;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.cheat-button:hover {
+    transform: scale(1.05);
+}

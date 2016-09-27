@@ -11,9 +11,8 @@ var pokedex = "http://pokeapi.co/api/v2/pokemon/";
 // 1.1)  Use the addPokemon function to show each of the Pokémon names that were retrieved.  
 //Hint: Learn how to access resources via the documentation http://pokeapi.co/docsv2/#resource-lists
 $.getJSON(pokedex, function addPokemon(pokeName) {
-    for (i = 0; i < 20; i++)
+    for (i = 0; i < pokeName.results.length; i++)
         $(`<li class="poke-card"><h3 class="name">${pokeName.results[i].name}</h3></li>`).appendTo('#pokemon');
-    console.log(pokeName.results[i]);
 });
 
 

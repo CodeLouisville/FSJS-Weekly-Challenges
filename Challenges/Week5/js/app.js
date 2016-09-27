@@ -33,5 +33,5 @@ $("#next").click(function () {
 
 });
 // 2.1) Use the "next" and "previous" properties of the pokemon resource object to get the next or previous list of Pokémon.
- 
+
 // 2.3) Use jQuery to disable the next/previous buttons if there are no more Pokémon to retrieve in that direction.

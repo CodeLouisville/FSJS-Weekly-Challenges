@@ -32,4 +32,4 @@ for(i=0;i<link.length;i++){
 }
 
 // TODO: set up the tooltip plugin on all of the links in the menu
-$('a').tooltip();
+$('#menu li a').tooltip();

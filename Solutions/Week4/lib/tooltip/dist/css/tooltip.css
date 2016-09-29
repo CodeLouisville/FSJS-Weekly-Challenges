@@ -1,0 +1,30 @@
+/* Tooltips */
+/* line 2, ../../src/sass/tooltip.scss */
+.tooltip {
+  position: absolute;
+  z-index: 9001;
+  background: #000;
+  color: #FFF;
+  padding: 3px 5px;
+  max-width: 200px;
+  cursor: default;
+  line-height: 1.2;
+}
+
+/* line 12, ../../src/sass/tooltip.scss */
+.tooltip [class*='arrow-'] {
+  position: absolute;
+  -webkit-transform-origin: 0% 100%;
+  -ms-transform-origin: 0% 100%;
+  transform-origin: 0% 100%;
+}
+
+/* line 18, ../../src/sass/tooltip.scss */
+.tooltip .arrow-left {
+  margin-top: -12px;
+}
+
+/* line 21, ../../src/sass/tooltip.scss */
+.tooltip .arrow-right {
+  margin-top: -12px;
+}

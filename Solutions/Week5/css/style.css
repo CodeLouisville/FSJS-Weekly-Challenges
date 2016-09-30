@@ -76,7 +76,7 @@ h1 {
 
 #poke-detail {
   background-color: white;
-  width: 30%;
+  width: 40%;
   margin: 0 auto;
   color: black;
   border-radius: 1em;   
@@ -84,7 +84,8 @@ h1 {
 }
 
 #poke-detail img {
-  width: 100%;
+    display: block;
+    margin: 0 auto;
 }
 
 #poke-detail h3 {
@@ -98,10 +99,20 @@ ul {
     width: 100%;
 }
 
-ul li {
+ul#pokemon li {
     list-style: none;
     width: 20%;
-    margin: 0 1%;
+    margin: .5em 1%;
+    padding: 1em;
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+#stats li {
+    list-style: none;
+    width: 50%;
+    margin: 0;
     padding: 1em;
     display: inline-block;
     cursor: pointer;
@@ -120,6 +131,14 @@ ul li {
     cursor: pointer;
     transition: all .2s ease-in-out;
     min-width: 150px;   
+}
+
+.btn:disabled {
+  background-color: #ccc;
+}
+
+#back {
+  width: 100%;
 }
 
 .btn:hover {

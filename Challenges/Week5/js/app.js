@@ -11,8 +11,19 @@ function addPokemon(name) {
 // 1.1)  Use the addPokemon function to show each of the Pokémon names that were retrieved.  
 //Hint: Learn how to access resources via the documentation http://pokeapi.co/docsv2/#resource-lists
 
+{
+    "count": 365,
+    "next": "http://pokeapi.co/api/v2/evolution-chain/?limit=20&offset=20",
+    "previous": null,
+    "results": [{
+        "url": "http://pokeapi.co/api/v2/evolution-chain/1/"
+    }]
+	"limit" : 20;
+}
 
 // 2.)  Use jQuery to create a click handler for the next and previous buttons.
+$("button#previous").click();
+
 // 2.1) Use the "next" and "previous" properties of the pokemon resource object to get the next or previous list of Pokémon.
 // 2.2) When a user clicks next or previous, remove all existing Pokémon from the ul element and add the new list of Pokémon.  
 // 2.3) Use jQuery to disable the next/previous buttons if there are no more Pokémon to retrieve in that direction.  

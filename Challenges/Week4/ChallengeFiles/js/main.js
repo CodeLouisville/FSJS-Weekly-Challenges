@@ -8,10 +8,11 @@ function openBlock (id) {
     block.style.display = "block";
     
     // TODO: remove the "active" class from all of the li elements inside the menu
-    // TODO: add the "active" class to the li element that contains the link that was clicked
+	
+	
+    // TODO: add the class"active" class to the li element that contains the link that was clicked
 }
 
-menu.onclick(openBlock);
 
 // TODO: add the "hover" class to the menu items when you hover over them
 

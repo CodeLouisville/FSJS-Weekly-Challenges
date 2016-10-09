@@ -6,7 +6,14 @@ function addPokemon(name) {
     `).appendTo('#pokemon');
 };
 
-
+{
+    "count": 20,
+    "next": "http://pokeapi.co/api/v2/evolution-chain/?limit=20&offset=20",
+    "previous": null,
+    "results": [{
+        "url": "http://pokeapi.co/api/v2/evolution-chain/1/"
+    }]
+}
 // 1.)  Use the PokéAPI from http://pokeapi.co along with jQuery's getJSON function to retrieve the first 20 Pokémon.
 // 1.1)  Use the addPokemon function to show each of the Pokémon names that were retrieved.  
 //Hint: Learn how to access resources via the documentation http://pokeapi.co/docsv2/#resource-lists

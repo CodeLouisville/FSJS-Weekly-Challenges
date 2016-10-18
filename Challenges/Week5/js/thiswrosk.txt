@@ -1,0 +1,7 @@
+$.getJSON(pokeAPI, function  (data) {
+	poke = data;
+		$.each(poke.results, function(i, item) {
+			addPokemon(item.name);
+			});
+
+});

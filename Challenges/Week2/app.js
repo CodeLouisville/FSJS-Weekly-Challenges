@@ -1,8 +1,19 @@
-//create function
-  //control and return statements
 
-//Prompt user for input and store variable
+function processInput(message)
+{
+	if(message === "hello")
+	{
+	return ("Hello World!");
+	}
+	else {
+		return("You didn't say hello :(");
+	}
+}
 
-//Call function
+var userInput;
 
-//Alert user results
+userInput = prompt();
+
+var response = processInput(userInput);
+
+console.log(response);

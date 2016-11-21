@@ -1,0 +1,43 @@
+body{
+    margin-top: 10em;
+    text-align: center;
+    font-family: Lato;
+}
+.box{    
+    height: 100px;
+    width:100px;
+    border: solid 2px black;    
+    margin: auto;
+    text-align: center;
+    margin-bottom: 1.5em;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.btn-group a {
+    display:inline-block;
+}
+.btn-group{
+    
+}
+
+.form-control{
+    width: 200px;
+    margin: auto;
+    margin-bottom: 1.5em;
+}
+
+ul{
+    list-style: none;
+}
+
+
+.print.btn, #printResults{
+    width:200px;
+}
+
+#printResults{
+    border:solid 1px lightgrey;
+    text-align: left;
+    font-family: Lato;
+}

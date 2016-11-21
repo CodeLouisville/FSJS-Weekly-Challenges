@@ -1,51 +1,43 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
-	<title>Box</title>
-</head>
-<body>
-    <div class="header">
-			
-<h3>Code Challenge:</h3> 
-<p>
-Create an object named "Box" with 3 properties, height, width, volume.</br>
-Create 2 buttons for Height. The first button decreases the Box Height by 1. The second button increases the Box Height by 1.</br>
-Create a button that prints the object and its attributes to the page (use the span "output".</br>
-</p>
- 
-<h3>Extra credit</h3>
-<p>Create interactive buttons to decrease or increase the Width and Volume</p>
+    <head>
+        <meta charset="utf-8">
+        <title>J Marsh | Week6</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> 
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="box"></div>
+                </div>
+                <div class="col-lg-3">
+                    <select name="dimension" class=" form-control selectpicker">
+                      <option>Dimensions</option>
+                      <option>Height</option>
+                      <option>Width</option>
+                      <option>Volume</option>
+                    </select>
 
-			
-    </div>
-	
-	<table>
-		<tr>
-			<td>Box:</td>
-			<td><span id="output"></span>
-			<td><button id="Print" class="btn">Print Box</button></td>
-		</tr>
-		<tr>
-			<td>Height:</td>
-			<td><button id="HeightDecrease" class="btn">-</button></td>
-			<td><button id="HeightIncrease" class="btn">+</button></td>
-		</tr>
-		<tr>
-			<td>Weight:</td>
-			<td><button id="WeightDecrease" class="btn">-</button></td>
-			<td><button id="WeightIncrease" class="btn">+</button></td>
-		</tr>
-		<tr>
-			<td>Volume:</td>
-			<td><button id="VolumeDecrease" class="btn">-</button></td>
-			<td><button id="VolumeIncrease" class="btn">+</button></td>
-		</tr>
-	</table>
-
-
-    <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
-	<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
-
-</body>
+                    <div class="btn-group col-lg-off-set-6" role="group" aria-label="...">                   
+                        <div class="minus btn btn-lg btn-danger"><span class="glyphicon glyphicon-minus"></span></div>
+                        <div class="add btn btn-lg btn-success"><span class="glyphicon glyphicon-plus"></span></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="col-lg-2">
+                        <div class="print btn btn-lg btn-default"><span>Print Results</span></div>
+                        <div id="printResults"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- JavaScripts -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js" integrity="sha384-I6F5OKECLVtK/BL+8iSLDEHowSAfUo76ZL9+kGAgTRdiByINKJaqTPH/QVNS1VDb" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <script src="js/app.js"></script>
+    </body>
 </html>
